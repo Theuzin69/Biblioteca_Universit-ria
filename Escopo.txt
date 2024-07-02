@@ -1,0 +1,22 @@
+Usuários:
+-Alunos, Funcionários e Professores
+-Podem emprestar e reservar obras. 
+
+Obras: Livros ou Fitas de Vídeo
+
+Livros:
+-Podem existir diversos exemplares de um livro
+-Cada um possui um número (tombo);
+
+Alunos:
+-Empréstimo de 15 dias
+
+Professores:
+-Empréstimo de 90 dias
+-Devem informar em qual departamento trabalham
+
+Funcionários:
+-Empréstimo de 30 dias
+-Devem informar seu cargo
+
+O sistema deve exibir a lista de obras em atraso.
