@@ -1,15 +1,19 @@
 package Usuarios;
 
-public class Professor extends Usuario{
+public class Professor extends Usuario {
     static int Prazo = 90;
-    private String Departamento;
-    
-    public Professor(int ID, String Nome, String Departamento) {
-	super(ID, Nome);
-        this.Departamento = Departamento;
+    private String departamento;
+
+    public Professor(int id, String nome, String departamento) {
+        super(id, nome);
+        this.departamento = departamento;
     }
-    
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
     public int getPrazo() {
-        return this.Prazo;
+        return Prazo;
     }
 }
