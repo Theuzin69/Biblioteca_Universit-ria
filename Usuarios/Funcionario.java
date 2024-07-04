@@ -1,15 +1,19 @@
 package Usuarios;
 
-public class Funcionario extends Usuario{
+public class Funcionario extends Usuario {
     static int Prazo = 30;
-    private String Cargo;
-    
-    public Funcionario(int ID, String Nome, String Cargo) {
-	super(ID, Nome);
-        this.Cargo = Cargo;
+    private String cargo;
+
+    public Funcionario(int id, String nome, String cargo) {
+        super(id, nome);
+        this.cargo = cargo;
+    }
+
+    public String getCargo() {
+        return cargo;
     }
     
     public int getPrazo() {
-        return this.Prazo;
+        return Prazo;
     }
 }
