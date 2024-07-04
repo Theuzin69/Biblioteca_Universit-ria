@@ -5,13 +5,21 @@
 package Usuarios;
 
 public abstract class Usuario {
-    private int ID;
-    private String Nome;
-	
-    public Usuario(int ID, String Nome) {
-	this.ID = ID;
-	this.Nome = Nome;
+    private int id;
+    private String nome;
+
+    public Usuario(int id, String nome) {
+        this.id = id;
+        this.nome = nome;
     }
-    
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
     public abstract int getPrazo();
 }
