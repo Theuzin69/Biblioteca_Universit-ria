@@ -33,7 +33,7 @@ public class Main {
                     String nomeUsuario = scanner.nextLine();
                     System.out.println("Digite o tipo do usuário (1 - Aluno, 2 - Professor, 3 - Funcionário):");
                     int tipoUsuario = scanner.nextInt();
-                    scanner.nextLine();  // Consume the newline
+                    scanner.nextLine();
 
                     Usuario novoUsuario = null;
                     switch (tipoUsuario) {
@@ -66,7 +66,7 @@ public class Main {
                     String nomeObra = scanner.nextLine();
                     System.out.println("Digite o tipo da obra (1 - Livro, 2 - Fita de vídeo):");
                     int tipoObra = scanner.nextInt();
-                    scanner.nextLine();  // Consume the newline
+                    scanner.nextLine();
 
                     System.out.println("Digite o nome do dono da obra:");
                     String nomeDonoObra = scanner.nextLine();
@@ -87,7 +87,7 @@ public class Main {
                     if (tipoObra == 1) {
                         System.out.println("Digite o tombo do livro:");
                         int tomboLivro = scanner.nextInt();
-                        scanner.nextLine();  // Consume the newline
+                        scanner.nextLine();
                         novaObra = new Livro(nomeObra, donoObra, tomboLivro);
                     } else if (tipoObra == 2) {
                         novaObra = new FitaDeVideo(nomeObra, donoObra);
